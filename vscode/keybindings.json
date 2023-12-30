@@ -1,0 +1,12 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "alt+a",
+        "command": "notebook.cell.executeCellsAbove"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    }
+]

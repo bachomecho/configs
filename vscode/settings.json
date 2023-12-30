@@ -1,0 +1,59 @@
+{
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "p"],
+      "after": ["v", "e", "\"", "0", "p"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "after": [":", "w", "Enter"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "after": [":", "q", "Enter"]
+    },
+    {
+      "before": ["g", "p", "d"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "editor.wordWrap": "on",
+  "notebook.lineNumbers": "on",
+  "editor.lineNumbers": "relative",
+  "editor.bracketPairColorization.enabled": false,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "right"
+  },
+  "editor.guides.highlightActiveIndentation": false,
+  "[python]": {
+    "editor.formatOnSave": true
+  },
+  "git.enableSmartCommit": true,
+  "redhat.telemetry.enabled": false,
+  "cmake.configureOnOpen": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "solid",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.startupEditor": "none",
+  "vim.leader": "<space>",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false
+  },
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "workbench.activityBar.location": "hidden",
+  "explorer.confirmDelete": false,
+  "editor.guides.indentation": false,
+  "workbench.colorTheme": "Visual Studio Dark",
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false
+}
