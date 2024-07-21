@@ -1,59 +1,90 @@
 {
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["<leader>", "p"],
-      "after": ["v", "e", "\"", "0", "p"]
-    },
-    {
-      "before": ["<leader>", "w"],
-      "after": [":", "w", "Enter"]
-    },
-    {
-      "before": ["<leader>", "q"],
-      "after": [":", "q", "Enter"]
-    },
-    {
-      "before": ["g", "p", "d"],
-      "commands": ["editor.action.peekDefinition"]
-    },
-    {
-      "before": ["g", "h"],
-      "commands": ["editor.action.showDefinitionPreviewHover"]
-    }
-  ],
-  "editor.wordWrap": "on",
-  "notebook.lineNumbers": "on",
-  "editor.lineNumbers": "relative",
-  "editor.bracketPairColorization.enabled": false,
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "right"
-  },
-  "editor.guides.highlightActiveIndentation": false,
-  "[python]": {
-    "editor.formatOnSave": true
-  },
-  "git.enableSmartCommit": true,
-  "redhat.telemetry.enabled": false,
-  "cmake.configureOnOpen": true,
-  "files.trimTrailingWhitespace": true,
-  "editor.formatOnSave": true,
-  "editor.minimap.enabled": false,
-  "editor.cursorBlinking": "solid",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.startupEditor": "none",
-  "vim.leader": "<space>",
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": false,
-    "scminput": false
-  },
-  "editor.fontFamily": "Consolas, 'Courier New', monospace",
-  "workbench.activityBar.location": "hidden",
-  "explorer.confirmDelete": false,
-  "editor.guides.indentation": false,
-  "workbench.colorTheme": "Visual Studio Dark",
-  "window.menuBarVisibility": "compact",
-  "window.commandCenter": false
+	"vim.normalModeKeyBindings": [
+		{
+			"before": ["<leader>", "p"],
+			"after": ["v", "e", "\"", "0", "p"]
+		},
+		{
+			"before": ["<leader>", "w"],
+			"after": [":", "w", "Enter"]
+		},
+		{
+			"before": ["<leader>", "q"],
+			"after": [":", "q", "Enter"]
+		},
+		{
+			"before": ["g", "p", "d"],
+			"commands": ["editor.action.peekDefinition"]
+		},
+		{
+			"before": ["g", "h"],
+			"commands": ["editor.action.showDefinitionPreviewHover"]
+		},
+		{
+			"before": ["<C-p>"],
+			"commands": ["workbench.action.quickOpen"]
+		}
+	],
+	"editor.wordWrap": "on",
+	"notebook.lineNumbers": "on",
+	"editor.lineNumbers": "relative",
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "right"
+	},
+	"editor.guides.highlightActiveIndentation": false,
+	"[python]": {
+		"editor.formatOnSave": true
+	},
+	"git.enableSmartCommit": true,
+	"redhat.telemetry.enabled": false,
+	"cmake.configureOnOpen": true,
+	"files.trimTrailingWhitespace": true,
+	"editor.formatOnSave": true,
+	"editor.minimap.enabled": false,
+	"editor.cursorBlinking": "blink",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"workbench.startupEditor": "none",
+	"vim.leader": "<space>",
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": true,
+		"markdown": false,
+		"scminput": false
+	},
+	"editor.fontFamily": "Jetbrains Mono, 'Courier New', monospace",
+	"explorer.confirmDelete": false,
+	"editor.guides.indentation": true,
+	"editor.autoClosingBrackets": "always",
+	"editor.autoClosingQuotes": "always",
+	"editor.language.colorizedBracketPairs": [],
+	"editor.bracketPairColorization.enabled": false,
+	"window.zoomLevel": -1,
+	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"workbench.layoutControl.enabled": false,
+	"window.commandCenter": false,
+	"prettier.useTabs": true,
+	"window.menuBarVisibility": "compact",
+	"diffEditor.renderSideBySide": true,
+	"github.copilot.editor.enableAutoCompletions": true,
+	"workbench.colorTheme": "Vim Dark Hard",
+	"workbench.colorCustomizations": {
+		"[Vim Dark Hard]": {
+			"sideBar.foreground": "#c7c7c7",
+			"sideBar.background": "#0b1014",
+			"sideBarSectionHeader.background": "#0b1014",
+			"editor.background": "#000000",
+			"breadcrumb.background": "#0b1014",
+			"statusBar.background": "#0b1014",
+			"statusBar.foreground": "#f5f5f5",
+			"minimap.background": "#0b1014",
+			"titleBar.activeBackground": "#0b1014",
+			"editorGroupHeader.tabsBackground": "#0b1014",
+			"activityBar.background": "#0b1014",
+			"tab.inactiveBackground": "#0b1014",
+			"tab.activeBackground": "#0b1014",
+			"tab.activeBorder": "#66ff73"
+		}
+	}
 }
