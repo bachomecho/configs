@@ -34,7 +34,8 @@
 	},
 	"editor.guides.highlightActiveIndentation": false,
 	"[python]": {
-		"editor.formatOnSave": true
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "ms-python.python"
 	},
 	"git.enableSmartCommit": true,
 	"redhat.telemetry.enabled": false,
@@ -52,7 +53,7 @@
 		"markdown": false,
 		"scminput": false
 	},
-	"editor.fontFamily": "Jetbrains Mono, 'Courier New', monospace",
+	"editor.fontFamily": "Fira Code, 'Courier New', monospace",
 	"explorer.confirmDelete": false,
 	"editor.guides.indentation": true,
 	"editor.autoClosingBrackets": "always",
@@ -68,23 +69,10 @@
 	"window.menuBarVisibility": "compact",
 	"diffEditor.renderSideBySide": true,
 	"github.copilot.editor.enableAutoCompletions": true,
-	"workbench.colorTheme": "Vim Dark Hard",
-	"workbench.colorCustomizations": {
-		"[Vim Dark Hard]": {
-			"sideBar.foreground": "#c7c7c7",
-			"sideBar.background": "#0b1014",
-			"sideBarSectionHeader.background": "#0b1014",
-			"editor.background": "#000000",
-			"breadcrumb.background": "#0b1014",
-			"statusBar.background": "#0b1014",
-			"statusBar.foreground": "#f5f5f5",
-			"minimap.background": "#0b1014",
-			"titleBar.activeBackground": "#0b1014",
-			"editorGroupHeader.tabsBackground": "#0b1014",
-			"activityBar.background": "#0b1014",
-			"tab.inactiveBackground": "#0b1014",
-			"tab.activeBackground": "#0b1014",
-			"tab.activeBorder": "#66ff73"
-		}
-	}
+	"vim.highlightedyank.enable": true,
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"workbench.sideBar.location": "right",
+	"zenMode.hideActivityBar": false
 }
